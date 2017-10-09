@@ -1,0 +1,46 @@
+<table class="table">
+    <tr>
+        <th>#</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Title</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+        <th>Phone Number</th>
+        <th>Fax Number</th>
+    </tr>
+    <tr *ngFor="let customer of Customers">
+        <td>
+          <a [routerLink]="['/customerdetail', customer.Id]">  {{ customer.Id }} </a>
+        </td>
+        <td>
+                {{ customer.CompanyName }}
+        </td>
+        <td>
+                {{ customer.ContactName }}
+        </td>
+        <td>
+                {{ customer.ContactTitle }}
+        </td>
+        <td>
+                {{ customer.Address }}
+        </td>
+        <td>
+                {{ customer.City }}
+        </td>
+        <td>
+                {{ customer.PostalCode }}
+        </td>
+        <td>
+                {{ customer.Country }}
+        </td>
+        <td>
+                {{ customer.Phone }}
+        </td>
+        <td>
+                {{ customer.Fax }}
+        </td>
+    </tr>
+</table>
