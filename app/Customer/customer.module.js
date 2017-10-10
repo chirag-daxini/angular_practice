@@ -11,23 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
-var app_component_1 = require('./app.component');
-var CustomerService_1 = require("./Services/CustomerService");
-var customer_routing_module_1 = require('./Customer/customer.routing.module');
-var customer_module_1 = require('./Customer/customer.module');
-var AppMainModule = (function () {
-    function AppMainModule() {
+var customer_routing_module_1 = require('../Customer/customer.routing.module');
+var CustomerService_1 = require('../Services/CustomerService');
+var CustomerModule = (function () {
+    function CustomerModule() {
     }
-    AppMainModule = __decorate([
+    CustomerModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, customer_module_1.CustomerModule, customer_routing_module_1.CustomerRoutingModule],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, customer_routing_module_1.CustomerRoutingModule],
             providers: [CustomerService_1.CustomerService]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppMainModule);
-    return AppMainModule;
+    ], CustomerModule);
+    return CustomerModule;
 }());
-exports.AppMainModule = AppMainModule;
-//# sourceMappingURL=app.module.js.map
+exports.CustomerModule = CustomerModule;
+//# sourceMappingURL=customer.module.js.map

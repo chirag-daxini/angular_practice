@@ -18,18 +18,17 @@ var routes = [
     { path: 'customer', component: customerlist_component_1.CustomertList },
     { path: 'customerdetail/:id', component: customerdetail_component_1.customerdetail }
 ];
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
+var CustomerRoutingModule = (function () {
+    function CustomerRoutingModule() {
     }
-    AppRoutingModule = __decorate([
+    CustomerRoutingModule = __decorate([
         core_1.NgModule({
             imports: [router_1.RouterModule.forRoot(routes), platform_browser_1.BrowserModule],
             exports: [router_1.RouterModule],
         }), 
         __metadata('design:paramtypes', [])
-    ], AppRoutingModule);
-    return AppRoutingModule;
+    ], CustomerRoutingModule);
+    return CustomerRoutingModule;
 }());
-exports.AppRoutingModule = AppRoutingModule;
-exports.RoutingConst = [customerlist_component_1.CustomertList, customerdetail_component_1.customerdetail];
-//# sourceMappingURL=app.routing.js.map
+exports.CustomerRoutingModule = CustomerRoutingModule;
+//# sourceMappingURL=customer.routing.module.js.map
